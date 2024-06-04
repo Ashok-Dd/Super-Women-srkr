@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRKR wonders</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: red;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2%;
+        }
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid black;
+            padding: 3%;
+            width: 100%;
+            background-color: gold;
+            margin: 2%;
+            text-align: center;
+        }
+        button {
+            background-color: lawngreen;
+            width: 120px;
+            height: 30px;
+            border: 2px double #14213d;
+            transition: width 0.3s;
+            margin-top: 10px;
+        }
+        h1 {
+            color: #14213d;
+            margin-bottom: 10px;
+        }
+        .video {
+            width: 200px;
+            transition: width 0.3s;
+        }
+        button:hover {
+            background-color: aquamarine;
+            width: 150px;
+        }
+        .video:hover {
+            width: 230px;
+        }
+        @media (min-width: 480px) {
+            .box {
+                width: 90%;
+            }
+        }
+        @media (min-width: 768px) {
+            .box {
+                width: 70%;
+            }
+        }
+        @media (min-width: 1024px) {
+            .box {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="topper" class="box">
+        <h1>Do you want to see the topper of SRKR engineering college.</h1>
+        <a href="next.html?category=topper"><button>Click Here</button></a>
+    </div>
+    <div id="model" class="box">
+        <h1>Do you want to see the Model of SRKR engineering college.</h1>
+        <a href="next.html?category=model"><button>Click Here</button></a>
+    </div>
+    <div id="Beauty" class="box">
+        <h1>Do you want to see the Beauty of SRKR engineering college.</h1>
+        <a href="next.html?category=beauty"><button>Click Here</button></a>
+    </div>
+    <div id="dancer" class="box">
+        <h1>Do you want to see the Dancer of SRKR engineering college.</h1>
+        <a href="next.html?category=dancer"><button>Click Here</button></a>
+        <a href="next.html?category=dance"><button class="video">Click Here to watch the dance</button></a>
+    </div>
+    <div id="all" class="box">
+        <h1>Do you want to see the All-Rounder of SRKR engineering college.</h1>
+        <a href="next.html?category=all"><button>Click Here</button></a>
+    </div>
+</body>
+</html>
